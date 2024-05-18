@@ -1,0 +1,13 @@
+#Write a program to create a recursive function to calculate the sum of numbers from 0 to 15. 
+
+def recursive_sum(n):
+    # Base case: when n is 0, return 0
+    if n == 0:
+        return 0
+    # Recursive case: return n plus the sum of numbers from 0 to n-1
+    else:
+        return n + recursive_sum(n - 1)
+
+# Calculate the sum of numbers from 0 to 15
+result = recursive_sum(15)
+print("The sum of numbers from 0 to 15 is:", result)
